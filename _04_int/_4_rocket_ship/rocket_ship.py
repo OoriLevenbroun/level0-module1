@@ -1,3 +1,4 @@
+import turtle
 from tkinter import *
 
 window_width = 800
@@ -24,7 +25,9 @@ def mouse_pressed(event):
     
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
-    
+
+    canvas.create_oval(x-100, y+100, x+90, y+270, fill='red')
+
     # 2. Modify the locations of the shapes above so the rocket will be drawn
     #    where the mouse is clicked
     
