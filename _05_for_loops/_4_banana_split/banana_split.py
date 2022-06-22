@@ -15,10 +15,16 @@ import tkinter as tk
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
+canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF")
 canvas.grid()
-for i in range(3):
-    canvas.create_text(100, 50, text='ice cream', font=('Arial', 16))
+ice_cream = 'ice cream'
+y = 50
+for i in range(4):
+    if i == 3:
+        ice_cream = 'banana'
+    canvas.create_text(100, y, text=ice_cream, font=('Arial', 16))
+    y +=  25
+
 '''
 Text Rendering Example:
                     x    y                                                       
